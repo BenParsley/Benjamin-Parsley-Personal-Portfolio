@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Parsley</title>
+  <meta name="description" content="Bootstrap-based portfolio for Benjamin Parsley." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+  <header class="sticky-top">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase letter-spacing" href="#hero">Benjamin Parsley</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2">
+            <div class="hero-image-shell text-center">
+              <img src="me.png" alt="Portrait of Benjamin Parsley" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <span class="eyebrow">Hello, my name is</span>
+            <h1 class="display-3 fw-bold mb-3">Benjamin!</h1>
+            <p class="lead text-light-emphasis mb-4">Agentically-minded and ready to make a <span
+                class="accent-text">splash</span>.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-outline-light btn-no-hover px-4" href="#about">About Me</a>
+              <a class="btn btn-outline-light btn-no-hover px-4 " href="#projects">View projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-section py-4">
+      <div class="container">
+        <p class="section-label">[01] About Me</p>
+        <h2 class="h1 mb-4">About Me</h2>
+        <div class="row g-4">
+          <div class="col-12 col-lg-70 d-flex flex-column">
+            <div class="d-flex flex-column h-100 gap-3">
+              <div class="card glass-card about-card-split" style="overflow-y: auto;">
+                <div class="card-body p-4 d-flex flex-column justify-content-center"
+                  style="font-size: 0.93rem; line-height: 1.6;">
+                  <p>
+                    I am Benjamin Parsley,
+                    <span class="accent-text">a post-graduate professional</span>
+                    driven by a deep interest in
+                    <span class="accent-text"> frontend development, technical support, as well as quality
+                      assurance.</span>
+                    My technical foundation has been built through professional study and dedicated passion projects.
+                  </p>
+                  <p>
+                    I thrive in
+                    <span class="accent-text">collaborative, fast-paced environments</span>
+                    where I can leverage my problem-solving skills to resolve complex technical challenges.
+                    I enjoy working alongside developers and cross-functional teams,
+                    <span class="accent-text"> bringing a proactive, communicative, and detail-oriented </span> approach
+                    to
+                    building and testing systems.
+                  </p>
+                  <p class="mb-0">
+                    While my most recent roles have been centered around
+                    <span class="accent-text"> technical support and helping clients work more efficiently, </span>
+                    during my downtime I am
+                    <span class="accent-text"> always building and studying. </span>
+                    I am motivated to tackle complex challenges and expand my understanding of commercial
+                    web development and product testing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card glass-card tech-card-split d-none d-lg-flex">
+                <div class="card-body p-3 d-flex flex-column justify-content-center">
+                  <div class="vstack gap-3">
+                    <h3 class="h4 mb-0 d-lg-none text-center">Tech Stack</h3>
+                    <div class="tech-category-box">
+                      <div class="d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 mb-lg-2"
+                        data-bs-toggle="collapse" data-bs-target="#collapseWebDev" aria-expanded="false"
+                        aria-controls="collapseWebDev">
+                        <i class="bi bi-chevron-down flash-arrow d-lg-none"></i>
+                        <h4
+                          class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center text-lg-start"
+                          style="font-size: 0.68rem; letter-spacing: 0.12em;">Web Development</h4>
+                        <i class="bi bi-chevron-down flash-arrow d-lg-none"></i>
+                      </div>
+                      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-2 collapse d-lg-flex"
+                        id="collapseWebDev">
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">HTML5</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">CSS3</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">JavaScript</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">React</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">Bootstrap</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">Figma</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-category-box">
+                      <div class="d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 mb-lg-2"
+                        data-bs-toggle="collapse" data-bs-target="#collapseProgDB" aria-expanded="false"
+                        aria-controls="collapseProgDB">
+                        <i class="bi bi-chevron-down flash-arrow d-lg-none"></i>
+                        <h4
+                          class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center text-lg-start"
+                          style="font-size: 0.68rem; letter-spacing: 0.12em;">Programming & Databases</h4>
+                        <i class="bi bi-chevron-down flash-arrow d-lg-none"></i>
+                      </div>
+                      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-2 collapse d-lg-flex"
+                        id="collapseProgDB">
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">Python</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">Java</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">C++</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">PHP</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">SQL</div>
+                        </div>
+                        <div class="col">
+                          <div class="tech-pill tech-pill-sm text-center">MySQL</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-30 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseCertificates" aria-expanded="false"
+              aria-controls="collapseCertificates">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Certificates</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseCertificates">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <div class="card-body p-4">
+                  <h3 class="h4 mb-3">Certificates / Achievements</h3>
+                <div class="row g-2">
+                  <div class="col-12">
+                    <div class="cert-card p-2 px-3 h-100 d-flex justify-content-between align-items-center"
+                      onclick="this.classList.remove('nudge-active'); void this.offsetWidth; this.classList.add('nudge-active');"
+                      style="cursor: pointer;">
+                      <div>
+                        <div class="fw-bold" style="font-size: 0.9rem;">Meta Front-End Developer Certificate</div>
+                        <div class="text-muted small">2026 • In Progress • Meta</div>
+                      </div>
+                      <a href="javascript:void(0)" class="cert-file-link pe-none opacity-50" title="In Progress">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="https://coursera.org/share/cbf195357ef4d33853497183c4e78a2d" target="_blank"
+                      rel="noopener noreferrer"
+                      class="cert-card linked p-2 px-3 h-100 d-flex justify-content-between align-items-center text-decoration-none">
+                      <div>
+                        <div class="fw-bold" style="font-size: 0.9rem;">Google UX Certificate</div>
+                        <div class="text-muted small">2026 • Google</div>
+                      </div>
+                      <span class="cert-file-link" title="View Certificate">
+                        <i class="bi bi-box-arrow-up-right flash-arrow"></i>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <a href="https://coursera.org/share/1f87be371a4b61bcfa01d528f9dc1c25" target="_blank"
+                      rel="noopener noreferrer"
+                      class="cert-card linked p-2 px-3 h-100 d-flex justify-content-between align-items-center text-decoration-none">
+                      <div>
+                        <div class="fw-bold" style="font-size: 0.9rem;">Google AI Professional Certificate</div>
+                        <div class="text-muted small">2026 • Google</div>
+                      </div>
+                      <span class="cert-file-link" title="View Certificate">
+                        <i class="bi bi-box-arrow-up-right flash-arrow"></i>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <div class="cert-card p-2 px-3 h-100 d-flex justify-content-between align-items-center">
+                      <div>
+                        <div class="fw-bold" style="font-size: 0.9rem;">BSc (Hons) Computer Science Degree</div>
+                        <div class="text-muted small">2022 • University of Hertfordshire</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="cert-card p-2 px-3 h-100 d-flex justify-content-between align-items-center">
+                      <div>
+                        <div class="fw-bold" style="font-size: 0.9rem;">Chairman of the Esports Society</div>
+                        <div class="text-muted small">2021 • University of Hertfordshire</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="cert-card p-2 px-3 h-100 d-flex justify-content-between align-items-center">
+                      <div>
+                        <div class="fw-bold" style="font-size: 0.9rem;">Software Development Level 3 Diploma</div>
+                        <div class="text-muted small">2018 • Hertford Regional College</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-section py-5">
+      <div class="container">
+        <p class="section-label">[02] Experience</p>
+        <h2 class="h1 mb-4">Experience</h2>
+        <div class="row g-4">
+          <div class="col-12 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseExperience1" aria-expanded="false"
+              aria-controls="collapseExperience1">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Technical Support Analyst</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseExperience1">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <div class="card-body p-4 p-lg-5">
+                  <h3 class="h4 mb-2">Technical Support Analyst</h3>
+                  <p class="text-muted mb-4">Carestream Dental UK • Jul 2023 - Present</p>
+                <p class="mb-4">Delivered <span class="accent-text fw-bold">comprehensive technical solutions</span> for
+                  Carestream Dental's clients, taking <span class="accent-text fw-bold">full ownership</span> of complex
+                  <span class="accent-text fw-bold">software and hardware cases</span> from initial contact through to
+                  resolution. Operating in a high-volume environment, I combine deep <span
+                    class="accent-text fw-bold">technical diagnostics with a
+                    proactive approach to customer care.</span> This ensures that dental practices experience <span
+                    class="accent-text fw-bold">minimal downtime</span>, receive world-class service, and benefit from
+                  continuous improvements driven by customer feedback and technical innovation.
+                </p>
+
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <h4 class="h6 accent-text mb-3 text-uppercase" style="letter-spacing: 0.1em;">Core Responsibilities
+                    </h4>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3">
+                        <strong class="d-block text-white">End-to-End Support</strong>
+                        <span class="d-block text-muted ps-3">Owned complex hardware/software cases from initiation to
+                          final
+                          resolution.</span>
+                      </li>
+                      <li class="mb-3">
+                        <strong class="d-block text-white">Team Mentorship</strong>
+                        <span class="d-block text-muted ps-3">Trained and mentored new team members by actively sharing
+                          best
+                          practices.</span>
+                      </li>
+                      <li class="mb-3">
+                        <strong class="d-block text-white">Resolution Efficiency</strong>
+                        <span class="d-block text-muted ps-3">Exceeded strict targets by prioritizing rapid
+                          first-contact
+                          resolutions.</span>
+                      </li>
+                      <li class="mb-3">
+                        <strong class="d-block text-white">Security Research</strong>
+                        <span class="d-block text-muted ps-3">Investigated software ecosystems to proactively identify
+                          and patch
+                          risks.</span>
+                      </li>
+                      <li>
+                        <strong class="d-block text-white">Defect Tracking</strong>
+                        <span class="d-block text-muted ps-3">Reproduced system errors and documented critical software
+                          defects for
+                          R&D.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6 accent-text mb-3 text-uppercase" style="letter-spacing: 0.1em;">Key Achievements</h4>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-3">
+                        <strong class="d-block text-white">Performance Excellence</strong>
+                        <span class="d-block text-muted ps-3">Consistently exceeded SLAs and personal KPIs across all
+                          support channels.</span>
+                      </li>
+                      <li class="mb-3">
+                        <strong class="d-block text-white">Workflow Optimization</strong>
+                        <span class="d-block text-muted ps-3">Built a custom SQL search report, reducing solution lookup
+                          times by
+                          5x.</span>
+                      </li>
+                      <li class="mb-3">
+                        <strong class="d-block text-white">Advanced Diagnostics</strong>
+                        <span class="d-block text-muted ps-3">Analyzed SQL trace stacks and authored scripts for safe
+                          live
+                          deployments.</span>
+                      </li>
+                      <li>
+                        <strong class="d-block text-white">Knowledge Base</strong>
+                        <span class="d-block text-muted ps-3">Authored extensive internal guides to empower colleagues
+                          and improve
+                          efficiency.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-12 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseExperience2" aria-expanded="false"
+              aria-controls="collapseExperience2">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Product Selling Partner</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseExperience2">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <div class="card-body p-4 p-lg-5">
+                  <h3 class="h4 mb-2">Product Selling Partner</h3>
+                  <p class="text-muted mb-3">John Lewis and Partners • Jun 2021 - Feb 2023</p>
+                <p class="mb-4">Orchestrated dynamic <span class="accent-text fw-bold">sales and marketing</span>
+                  initiatives while managing comprehensive customer relations. By utilizing strong <span
+                    class="accent-text fw-bold">communication skills</span> and a deep understanding of product
+                  features, I consistently built <span class="accent-text fw-bold">positive relationships</span> and
+                  delivered personalized solutions that drove both <span class="accent-text fw-bold">customer
+                    satisfaction</span>
+                  and store performance.
+                </p>
+                <h4 class="h6 accent-text mb-3 text-uppercase" style="letter-spacing: 0.1em;">Core Responsibilities</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-3">
+                    <strong class="d-block text-white">Customer Experience</strong>
+                    <span class="d-block text-muted ps-3">Interacted directly with customers to understand their needs,
+                      demonstrating product features to build confidence and provide tailored solutions.</span>
+                  </li>
+                  <li class="mb-3">
+                    <strong class="d-block text-white">Sales Optimization</strong>
+                    <span class="d-block text-muted ps-3">Successfully identified popular products, leveraging upselling
+                      and cross-selling techniques to drive sales performance.</span>
+                  </li>
+                  <li>
+                    <strong class="d-block text-white">Inventory Management</strong>
+                    <span class="d-block text-muted ps-3">Contributed to an organized, visually appealing retail
+                      environment through efficient inventory and merchandising management.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-section py-5">
+      <div class="container">
+        <p class="section-label">[03] Projects</p>
+        <h2 class="h1 mb-4">Projects</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseProject1" aria-expanded="false"
+              aria-controls="collapseProject1">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Spanish Vocabulary Tool</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseProject1">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <img src="Project-Spanish-Vocabulary-Tool.png" class="card-img-top project-image"
+                  alt="Spanish Study Tool placeholder" />
+                <div class="card-body p-4 d-flex flex-column">
+                  <h3 class="h5">Spanish Vocabulary Tool</h3>
+                  <p class="text-muted">A vocabulary and grammar practice app built around learning repetition.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                    <a href="https://github.com/BenParsley/Spanish-Vocabulary-Tool"
+                      class="btn btn-outline-light btn-no-hover" target="_blank" rel="noopener noreferrer">View on
+                      GitHub</a>
+                    <span class="text-muted small">Feb 2026 - Present</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseProject2" aria-expanded="false"
+              aria-controls="collapseProject2">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Spanish Pronunciation Tool</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseProject2">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <img src="Project-Spanish-Pronunciation-Tool.png" class="card-img-top project-image"
+                  alt="Spanish Pronunciation Tool example" style="transform: scale(1); object-fit: contain;" />
+                <div class="card-body p-4 d-flex flex-column">
+                  <h3 class="h5">Spanish Pronunciation Tool</h3>
+                  <p class="text-muted">A tool for practicing Spanish pronunciation. </p>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                    <a href="https://github.com/BenParsley/Spanish-Pronunciation-Tool"
+                      class="btn btn-outline-light btn-no-hover" target="_blank" rel="noopener noreferrer">View
+                      on GitHub</a>
+                    <span class="text-muted small">July 2026 - Present</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseProject3" aria-expanded="false"
+              aria-controls="collapseProject3">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">AI Music Library</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseProject3">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <img src="Project-AIMusicLibrary.png" class="card-img-top project-image" alt="AI Music Library project"
+                  style="transform: scale(1); object-fit: contain;" />
+                <div class="card-body p-4 d-flex flex-column">
+                  <h3 class="h5">AI Music Library</h3>
+                  <p class="text-muted">A static, ready-to-run web application for exploring and managing AI-generated
+                    music.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                    <a href="https://github.com/BenParsley/AI-Music-Library" class="btn btn-outline-light btn-no-hover"
+                      target="_blank" rel="noopener noreferrer">View on
+                      GitHub</a>
+                    <span class="text-muted small">June 2025 - Present</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseProject4" aria-expanded="false"
+              aria-controls="collapseProject4">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Healthy Tracker</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseProject4">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <img src="Project-HealthyTracker.png" class="card-img-top project-image" alt="Healthy Tracker example" />
+                <div class="card-body p-4 d-flex flex-column">
+                  <h3 class="h5">Healthy Tracker</h3>
+                  <p class="text-muted">A watch-like interface for daily reminders for daily habits. </p>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                    <a href="https://github.com/BenParsley/HealthyHabits" class="btn btn-outline-light btn-no-hover"
+                      target="_blank" rel="noopener noreferrer">View
+                      on GitHub</a>
+                    <span class="text-muted small">April 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseProject5" aria-expanded="false"
+              aria-controls="collapseProject5">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Gemini Folders</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseProject5">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <img src="Project-GeminiFoldersExample.png" class="card-img-top project-image"
+                  alt="Gemini Folders and Protected Files example" style="transform: scale(0.92); object-fit: contain;" />
+                <div class="card-body p-4 d-flex flex-column">
+                  <h3 class="h5">Gemini Folders and Protected Files</h3>
+                  <p class="text-muted">A browser extension for organising Gemini chats with folders and protected files.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                    <a href="https://github.com/BenParsley/Gemini-Folders-and-Protected-Chats"
+                      class="btn btn-outline-light btn-no-hover" target="_blank" rel="noopener noreferrer">View on
+                      GitHub</a>
+                    <span class="text-muted small">Dec 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="d-lg-none d-flex justify-content-between align-items-center cursor-pointer-mobile mb-0 p-3 glass-card rounded"
+              data-bs-toggle="collapse" data-bs-target="#collapseProject6" aria-expanded="false"
+              aria-controls="collapseProject6">
+              <i class="bi bi-chevron-down flash-arrow"></i>
+              <h4 class="text-uppercase text-light-emphasis fw-bold mb-0 flex-grow-1 text-center"
+                style="font-size: 0.68rem; letter-spacing: 0.12em;">Cryptography</h4>
+              <i class="bi bi-chevron-down flash-arrow"></i>
+            </div>
+            <div class="collapse d-lg-block flex-grow-1" id="collapseProject6">
+              <div class="card glass-card h-100 mt-2 mt-lg-0">
+                <img src="Project-WhatIsCryptography.png" class="card-img-top project-image"
+                  alt="What is Cryptography project" />
+                <div class="card-body p-4 d-flex flex-column">
+                  <h3 class="h5">What is Cryptography? - Dissertation</h3>
+                  <p class="text-muted">An interactive explainer for university-level cryptography concepts.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                    <a href="https://github.com/BenParsley/cryptographic-failure"
+                      class="btn btn-outline-light btn-no-hover" target="_blank" rel="noopener noreferrer">View on
+                      GitHub</a>
+                    <span class="text-muted small">June 2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-section py-5">
+      <div class="container">
+        <p class="section-label">[04] Contact</p>
+        <h2 class="h1 mb-4">Contact</h2>
+        <div class="card glass-card">
+          <div class="card-body p-4 p-md-5">
+            <div class="row align-items-center g-5 flex-column-reverse flex-lg-row">
+              <div class="col-lg-7">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <a class="contact-link h-100 p-4 d-flex flex-column align-items-center justify-content-center text-center"
+                      href="https://www.linkedin.com/in/benjamin-parsley/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-linkedin fs-1 mb-3" style="color: #0a66c2;"></i>
+                      <span class="fw-bold fs-5">LinkedIn</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a class="contact-link h-100 p-4 d-flex flex-column align-items-center justify-content-center text-center"
+                      href="https://github.com/BenParsley" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github fs-1 mb-3"></i>
+                      <span class="fw-bold fs-5">GitHub</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a class="contact-link h-100 p-4 d-flex flex-column align-items-center justify-content-center text-center"
+                      href="mailto:ben.parsley1@hotmail.com">
+                      <i class="bi bi-envelope fs-1 mb-3" style="color: var(--accent);"></i>
+                      <span class="fw-bold fs-5">Email</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a class="contact-link h-100 p-4 d-flex flex-column align-items-center justify-content-center text-center"
+                      href="https://discord.com/users/its_benji" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-discord fs-1 mb-3" style="color: #5865F2;"></i>
+                      <span class="fw-bold fs-5">Discord</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="d-lg-none mt-4 text-center">
+                  <a href="Benjamin-Parsley_Curriculum_Vitae.pdf" download target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light btn-no-hover btn-lg px-4 py-3 fw-bold d-inline-flex align-items-center justify-content-center gap-2 w-100">
+                    <i class="bi bi-file-earmark-arrow-down fs-5"></i> Download My CV
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center text-lg-start">
+                <h3 class="display-6 fw-bold mb-3">Let's connect!</h3>
+                <p class="text-muted mb-4 fs-5">I am currently <span class="accent-text">open to new
+                    opportunities</span>. Please feel free to reach out regarding professional inquiries, project
+                  collaborations, or any other questions you may have.</p>
+                <a href="Benjamin-Parsley_Curriculum_Vitae.pdf" download target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-light btn-no-hover btn-lg px-4 py-3 fw-bold d-none d-lg-inline-flex align-items-center justify-content-center gap-2 w-auto">
+                  <i class="bi bi-file-earmark-arrow-down fs-5"></i> Download My CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 border-top border-light border-opacity-10">
+    <div class="container text-center text-muted small">
+      © <span id="year"></span> Benjamin Parsley. Built with Bootstrap.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
