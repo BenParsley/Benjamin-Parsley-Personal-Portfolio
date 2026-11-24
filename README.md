@@ -1,4 +1,4 @@
-[benparsley.co.uk](https://benparsley.co.uk).
+[benparsley.co.uk](https://benparsley.co.uk)
 
 ![Portfolio Thumbnail](Project.png)
 
