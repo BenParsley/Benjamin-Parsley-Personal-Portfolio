@@ -1,6 +1,6 @@
 ## [benparsley.co.uk](https://benparsley.co.uk)
 
-![Portfolio Thumbnail](Project.png)
+https://github.com/user-attachments/assets/0fcbc2f6-3e07-46c2-9a4d-248f5103393b
 
 This repository contains the source code for my personal portfolio website. You can view the live site at [benparsley.co.uk](https://benparsley.co.uk).
 
